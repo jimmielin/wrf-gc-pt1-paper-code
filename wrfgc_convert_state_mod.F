@@ -458,9 +458,6 @@ contains
                ,grid%sm31, grid%em31, grid%sm33, grid%em33               &
                ,grid%sm32, grid%em32                                     &
                ,its, ite, jts, jte, kts, kte                             )
-        write(6,*) "max optd", maxval(optd)
-        write(6,*) "max taucldi", maxval(taucldi)
-        write(6,*) "max taucldw", maxval(taucldc)
         endif
         if(config_flags%hybrid_opt .eq. 2) then
             allocate(Ap(LM+1))
